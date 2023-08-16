@@ -1,0 +1,24 @@
+<p>Angular Assignment - APTOS</p>
+
+<div class="wrapper">
+  <select
+    name=""
+    id=""
+    class="rounded-inputs20 select-select col-md-3"
+    (change)="onChange($event)" 
+    onfocus="this.size=7;"
+    onblur="this.size=1;"
+    onchange="this.size=1; this.blur();"
+  >
+    <option value="none" selected disabled hidden>Select an Option</option>
+    <option *ngFor="let country of dropDownList" [value]="country.id">
+      {{ country.name }}
+    </option>
+  </select>
+</div>
+
+
+
+
+
+
