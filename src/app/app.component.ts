@@ -25,7 +25,7 @@ export class AppComponent {
 
   onChange(data : any) {
     this.selectedValue = this.dropDownList.find(x => x.id == data.target.value);
-    console.log(this.selectedValue.name);
+    console.log(this.selectedValue.name); //Print selected option in console
   }
 
 }
